@@ -1,0 +1,11 @@
+asgiref @ file:///C:/ci_311/asgiref_1676448296195/work
+Django @ file:///C:/ci_311/django_1676469589007/work
+gunicorn==20.1.0
+mysql-connector-python==8.0.33
+mysqlclient==2.2.0
+Pillow==9.5.0
+protobuf==3.20.3
+python-dotenv==1.0.0
+sqlparse @ file:///C:/ci_311/sqlparse_1676456541280/work
+tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
+whitenoise==6.4.0

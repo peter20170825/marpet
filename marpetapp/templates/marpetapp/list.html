@@ -1,0 +1,84 @@
+
+{% extends 'marpetapp/base.html' %}
+
+{% block content1 %}
+
+  {% if mech %}
+<div class="container-fluid mt-3" style='padding-top:50px'>
+  <h1>Porfolio:</h1>
+  <div class="row">
+       {% for a in mech %}
+         {% if a.id == 13 %}
+          {% else %}
+          <div class="col-sm-4 p-3 text-dark" >
+              <div class="card" style="width:400px">
+            <a href="{% url 'mechdetail' id=a.id %}">   <img class="card-img-top" src="{{a.cad_image.url}}" alt="Card image"  width=400px> </a>
+                <div class="card-body">
+                  <h4 class="card-title">{{a.heading}}</h4>
+                  <p class="card-text">{{a.short_paragraph}}</p>
+                  <a href="{% url 'mechdetail' id=a.id %}" class="btn btn-primary">See details</a>
+                </div>
+            </div>
+          </div>
+       {% endif %}
+       {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if civil %}
+<div class="container-fluid mt-3" style='padding-top:50px'>
+<h1>Porfolio:</h1>
+<div class="row">
+     {% for b in civil %}
+       {% if b.id == 16 %}
+
+        {% else %}
+        <div class="col-sm-4 p-3 text-dark" >
+            <div class="card" style="width:400px">
+          <a href="{% url 'civildetail' id=b.id %}">   <img class="card-img-top" src="{{b.cad_image.url}}" alt="Card image"  width=400px> </a>
+              <div class="card-body">
+                <h4 class="card-title">{{b.heading}}</h4>
+                <p class="card-text">{{b.short_paragraph}}</p>
+                <a href="{% url 'civildetail' id=b.id %}" class="btn btn-primary">See details</a>
+              </div>
+          </div>
+        </div>
+     {% endif %}
+     {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
+
+
+{% if elect %}
+<div class="container-fluid mt-3" style='padding-top:50px'>
+<h1>Porfolio:</h1>
+<div class="row">
+     {% for c in elect %}
+       {% if c.id == 5 %}
+
+        {% else %}
+        <div class="col-sm-4 p-3 text-dark" >
+            <div class="card" style="width:400px">
+          <a href="{% url 'electdetail' id=c.id %}">   <img class="card-img-top" src="{{c.cad_image.url}}" alt="Card image"  width=400px> </a>
+              <div class="card-body">
+                <h4 class="card-title">{{c.heading}}</h4>
+                <p class="card-text">{{c.short_paragraph}}</p>
+                <a href="{% url 'electdetail' id=c.id %}" class="btn btn-primary">See details</a>
+              </div>
+          </div>
+        </div>
+     {% endif %}
+     {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
+
+
+
+  {% endblock %}

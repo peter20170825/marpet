@@ -1,0 +1,39 @@
+{% extends 'marpetapp/base.html' %}
+
+{% block content2 %}
+
+    {% if mech %}
+    <div class="card shadow-sm container mt-3" >
+    <img  class="card-img-top img-fluid" src="{{mech.cad_image.url}}"  style='padding-top:100px;margin-top:20px;'  alt="pic">{# max-width:100%;height:auto;#}
+             <div class="container">
+                 <div class="jumbotron">
+                      <h3>{{mech.short_paragraph}}</h3>
+                 </div>
+             </div>
+      </div>
+     {% endif %}
+
+
+     {% if civil %}
+     <div class="card shadow-sm container mt-3">
+     <img  class="card-img-top img-fluid" src="{{civil.cad_image.url}}"  style='padding-top:100px;margin-top:20px;'  alt="pic">
+              <div class="container">
+                  <div class="jumbotron">
+                       <h3>{{civil.short_paragraph}}</h3>
+                  </div>
+              </div>
+       </div>
+      {% endif %}
+
+      {% if elect %}
+      <div class="card shadow-sm container mt-3">
+      <img  class="card-img-top img-fluid" src="{{elect.cad_image.url}}"  style='padding-top:100px;margin-top:20px;'  alt="pic">
+               <div class="container">
+                   <div class="jumbotron">
+                        <h3>{{elect.short_paragraph}}</h3>
+                   </div>
+               </div>
+        </div>
+       {% endif %}
+
+{% endblock %}

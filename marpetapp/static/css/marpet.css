@@ -1,0 +1,98 @@
+
+
+/*  Not Working */
+.mech{
+    background-image: url("{% static 'images/image1.jpg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.civil{
+  background-image: url("{% static 'images/image6.jpg' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.elect{
+  background-image: url("{% static 'images/image5.jpg' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.train{
+  background-image: url("{% static 'images/image4.jpg' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1{
+  font-size:60px;
+}
+.mech p{
+    font-size:30px;
+
+}
+
+.civil p{
+    font-size:30px;
+}
+
+.elect p{
+    font-size:30px;
+}
+
+.train p{
+    font-size:30px;
+}
+
+.carousel-caption h3{
+   font-size:60px;
+   color:blue;
+}
+
+.carousel-caption p{
+   font-size:30px;
+   font-weight: bolder;
+   color:blue;
+}
+
+.training{
+text-align: center;
+}
+
+.container p{
+color:red;
+}
+
+.container h3{
+text-align: center;
+padding-bottom:100px;
+}
+
+
+.myform {
+width:100%;
+padding-left:30px;
+padding-top:70px;
+}
+
+.myform2 {
+width:80%;
+padding-left:30px;
+padding-top:10px;
+padding-bottom:100px;
+}
+
+
+
+.container form{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: auto;
+}

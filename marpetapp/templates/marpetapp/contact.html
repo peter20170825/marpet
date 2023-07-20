@@ -1,0 +1,180 @@
+
+{% extends 'marpetapp/base.html' %}
+{% load static %}
+
+
+{% block content2 %}
+
+
+<div class="container-fluid mt-3">
+
+  <div class="container-fluid">
+    <div class="row" style='margin-top:150px;'>
+        <div class="col-sm-6 bg-primary text-white" style='padding:20px;height:300px;' > {# style='padding:auto;'#}
+        <h1> Contact Us</h1>
+        <br>
+        <h4><span>Email:</span> <a style='color:white;text-decoration:none;' href="mailto:peter_modo@yahoo.com">peter_modo@yahoo.com</a></h4>
+        <h4> Phone: +2347036731057</h4>
+        </div>
+        <div class="col-sm-6" >
+        <img class='img-fluid'  style='width:300px;height:300px;padding:20px;'  src="{% static 'images/MCVLOGO.jpg' %}" alt="">
+        </div>
+    </div>
+
+
+
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row" style='margin-top:30px;margin-bottom:70px;height:750px'>
+      <div class="col-sm-8 text-white bg-info"style='padding:20px;' >
+        <div class="container mt-3">
+
+                        <form action="" class="was-validated" method="POST">
+                          {% csrf_token %}
+                                <div class="mb-3">{#  mt-3  #}
+                                      <label for="name" class="form-label">Name:</label>
+                                      <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+                                      <div class="valid-feedback"></div>
+                                      <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject:</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message:</label>
+                                    <textarea name="message" class="form-control" id="email"  rows="8" cols="80" placeholder="create your message here"  required></textarea>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                            <input type="submit" name="" value="Submit" class="btn btn-primary">
+
+                            </form>
+           </div>
+
+      </div>
+
+
+
+                    <!-- <div class="col-sm-4  text-white" > -->
+                           <!-- <div class="container mt-3"> -->
+                  <!-- <img class='img-fluid'   style='padding-top:500px;'  src="{% static 'images/MCVLOGO.jpg' %}" alt=""> {# width:400px;height:500px; width:400px;height:500px; #} -->
+                  <!-- <h1 style='color:green;'> Image</h1> -->
+                    <!-- <img class='img-fluid'   style='padding-top:500px;'  src="{% static 'image1.jpg' %}" alt=""> -->
+                         <!-- </div> -->
+                <!-- </div> -->
+
+
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+{% comment %}
+<div class="container-fluid mt-6" style='margin-top:100px;'>
+
+      <div class="container mt-3" style='margin-top:200px;'>
+
+        <!-- <div class="mt-4 p-5 bg-primary text-white rounded"> -->
+           <!-- <h1> Contact Us </h1>  -->
+        <!-- </div>                      -->
+
+                                       <div class="mt-4 p-5 bg-primary text-white rounded">
+
+                                                  <div class="row">
+                                                        <div class="col.sm-6">
+                                                           <h1> Contact Us </h1>
+                                                        </div>
+
+                                                        <div class="col.sm-6" style='padding-left:50%;'>
+                                                           <h4><span>Email:</span> <a style='color:white;' href="mailto:peter_modo@yahoo.com">peter_modo@yahoo.com</a></h4>
+                                                           <h4> Phone: +2347036731057</h4>
+                                                        </div>
+                                                  </div>
+                                            </div>
+
+
+
+
+     </div>
+
+
+   <div class="row" style='margin-bottom:300px;'>
+
+      <div class="col-sm-8">
+
+                      <div class="container mt-3">
+
+                                      <form action="" class="was-validated" method="POST">
+                                        {% csrf_token %}
+                                              <div class="mb-3 mt-3">
+                                                    <label for="name" class="form-label">Name:</label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+                                                    <div class="valid-feedback"></div>
+                                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                              </div>
+
+                                              <div class="mb-3">
+                                                  <label for="email" class="form-label">Email:</label>
+                                                  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                                  <div class="valid-feedback"></div>
+                                                  <div class="invalid-feedback">Please fill out this field.</div>
+                                              </div>
+
+
+                                              <div class="mb-3">
+                                                  <label for="subject" class="form-label">Subject:</label>
+                                                  <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject" required>
+                                                  <div class="valid-feedback"></div>
+                                                  <div class="invalid-feedback">Please fill out this field.</div>
+                                              </div>
+
+
+                                              <div class="mb-3">
+                                                  <label for="message" class="form-label">Message:</label>
+                                                  <textarea name="message" class="form-control" id="email"  rows="8" cols="80" placeholder="create your message here"  required></textarea>
+                                                  <div class="valid-feedback"></div>
+                                                  <div class="invalid-feedback">Please fill out this field.</div>
+                                              </div>
+
+
+                                          <input type="submit" name="" value="Submit" class="btn btn-primary">
+
+                                          </form>
+                         </div>
+
+          </div>
+
+           <div class="col-sm-4" ><img style='padding-top:100px;width:400px;height:500px;'  src="{% static 'images/MCVLOGO.jpg' %}" alt=""></div>
+
+
+
+   </div>
+
+
+</div>
+{% endcomment %}
+
+{% endblock %}
